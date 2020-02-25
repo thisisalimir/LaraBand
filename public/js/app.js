@@ -2039,18 +2039,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Home"
-}); //TODO::Make Slider Loop
-// new Vue({
-//     el: '#mySlides',
-//     data: {
-//         slider: {
-//             title: ['Los Angeles', 'New York', 'Chicago'],
-//             description: ['We had the best time playing at Venice Beach!', 'The atmosphere in New York is lorem ipsum.', 'Thank you, Chicago - A night we won\'t forget.'],
-//             image: ['/images/la.jpg', '/images/ny.jpg', '/images/chicago.jpg']
-//         }
-//     }
-// });
+  data: function data() {
+    return {
+      sliders: [function (image) {
+        return ['/images/la.jpg', '/images/ny.jpg', '/images/chicago.jpg'];
+      }, function (title) {
+        return ['Los Angeles', 'New York', 'Chicago'];
+      }, function (description) {
+        return ['We had the best time playing at Venice Beach!', 'The atmosphere in New York is lorem ipsum.', 'Thank you, Chicago - A night we won\'t forget.'];
+      }]
+    };
+  }
+});
 
 /***/ }),
 
@@ -2821,45 +2821,8 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "mySlides w3-display-container w3-center" },
-      [
-        _c("img", {
-          staticStyle: { width: "100%" },
-          attrs: { src: "/images/la.jpg" }
-        }),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
-          },
-          [
-            _c("h3", [_vm._v("Los Angeles")]),
-            _vm._v(" "),
-            _c("p", [
-              _c("b", [_vm._v("We had the best time playing at Venice Beach!")])
-            ])
-          ]
-        )
-      ]
-    )
-  }
-]
-render._withStripped = true
+var render = function () {}
+var staticRenderFns = []
 
 
 
@@ -18321,15 +18284,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./resources/js/views/Home.vue ***!
   \*************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Home_vue_vue_type_template_id_63cd6604_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=63cd6604&scoped=true& */ "./resources/js/views/Home.vue?vue&type=template&id=63cd6604&scoped=true&");
 /* harmony import */ var _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue?vue&type=script&lang=js& */ "./resources/js/views/Home.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -18359,7 +18321,7 @@ component.options.__file = "resources/js/views/Home.vue"
 /*!**************************************************************!*\
   !*** ./resources/js/views/Home.vue?vue&type=script&lang=js& ***!
   \**************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
