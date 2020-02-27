@@ -2000,6 +2000,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _models_Slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/Slider */ "./resources/js/models/Slider.js");
 //
 //
 //
@@ -2013,44 +2014,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      sliders: [function (image) {
-        return ['/images/la.jpg', '/images/ny.jpg', '/images/chicago.jpg'];
-      }, function (title) {
-        return ['Los Angeles', 'New York', 'Chicago'];
-      }, function (description) {
-        return ['We had the best time playing at Venice Beach!', 'The atmosphere in New York is lorem ipsum.', 'Thank you, Chicago - A night we won\'t forget.'];
-      }]
+      sliders: []
     };
+  },
+  created: function created() {
+    var _this = this;
+
+    _models_Slider__WEBPACK_IMPORTED_MODULE_0__["default"].all(function (sliders) {
+      return _this.sliders = sliders;
+    });
   }
-});
+}); // Automatic Slideshow - change image every 4 seconds
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  myIndex++;
+
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
 
 /***/ }),
 
@@ -2821,8 +2820,43 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "mySlides" } },
+    _vm._l(_vm.sliders, function(slider) {
+      return _c(
+        "div",
+        { staticClass: "mySlides w3-display-container w3-center" },
+        [
+          _c("img", {
+            staticStyle: { width: "100%" },
+            attrs: { src: slider.image }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+            },
+            [
+              _c("h3", [_vm._v(_vm._s(slider.title))]),
+              _vm._v(" "),
+              _c("p", [_c("b", [_vm._v(_vm._s(slider.description))])])
+            ]
+          )
+        ]
+      )
+    }),
+    0
+  )
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -18103,6 +18137,45 @@ window.Vue = vue__WEBPACK_IMPORTED_MODULE_0___default.a;
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 window.axios = axios__WEBPACK_IMPORTED_MODULE_2___default.a;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+/***/ }),
+
+/***/ "./resources/js/models/Slider.js":
+/*!***************************************!*\
+  !*** ./resources/js/models/Slider.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Slider =
+/*#__PURE__*/
+function () {
+  function Slider() {
+    _classCallCheck(this, Slider);
+  }
+
+  _createClass(Slider, null, [{
+    key: "all",
+    value: function all(then) {
+      return axios.get('/sliders').then(function (_ref) {
+        var data = _ref.data;
+        return then(data);
+      });
+    }
+  }]);
+
+  return Slider;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Slider);
 
 /***/ }),
 

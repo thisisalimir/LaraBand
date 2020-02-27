@@ -7,27 +7,11 @@
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Ali Fatahi</a></p>
+    <p class="w3-medium">Powered by <a href="#" target="_blank">Ali Fatahi</a></p>
 </footer>
 
 {{--<script>--}}
-    {{--// Automatic Slideshow - change image every 4 seconds--}}
-    {{--let myIndex = 0;--}}
-    {{--carousel();--}}
-
-    {{--function carousel() {--}}
-        {{--let i;--}}
-        {{--let x = document.getElementsByClassName("mySlides");--}}
-        {{--for (i = 0; i < x.length; i++) {--}}
-            {{--x[i].style.display = "none";--}}
-        {{--}--}}
-        {{--myIndex++;--}}
-        {{--if (myIndex > x.length) {--}}
-            {{--myIndex = 1--}}
-        {{--}--}}
-        {{--x[myIndex - 1].style.display = "block";--}}
-        {{--setTimeout(carousel, 4000);--}}
-    {{--}--}}
+  {{----}}
 
     {{--// Used to toggle the menu on small screens when clicking on the menu button--}}
     {{--function myFunction() {--}}

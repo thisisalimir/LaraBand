@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sliders', function () {
+    return \App\slider::all();
+});
