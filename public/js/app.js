@@ -2027,15 +2027,22 @@ __webpack_require__.r(__webpack_exports__);
     _models_Slider__WEBPACK_IMPORTED_MODULE_0__["default"].all(function (sliders) {
       return _this.sliders = sliders;
     });
+  },
+  mounted: function mounted() {
+    carousel();
   }
 }); // Automatic Slideshow - change image every 4 seconds
 
 var myIndex = 0;
-carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+  var i,
+      x = document.getElementsByClassName("mySlides");
+
+  if (!x.length) {
+    setTimeout(carousel, 8000);
+    return false;
+  }
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -2048,7 +2055,7 @@ function carousel() {
   }
 
   x[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 4000);
+  setTimeout(carousel, 8000);
 }
 
 /***/ }),
@@ -2826,7 +2833,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { attrs: { id: "mySlides" } },
+    { attrs: { id: "slider" } },
     _vm._l(_vm.sliders, function(slider) {
       return _c(
         "div",

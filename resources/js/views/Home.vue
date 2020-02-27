@@ -1,5 +1,5 @@
 <template>
-    <div id="mySlides">
+    <div id="slider">
         <div v-for="slider in sliders" class="mySlides w3-display-container w3-center">
             <img v-bind:src="slider.image" style="width:100%">
             <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
@@ -22,17 +22,22 @@
         },
         created() {
             Slider.all(sliders => this.sliders = sliders);
-        }
+        },
+        mounted() {
+            carousel();
 
+        }
     }
 
     // Automatic Slideshow - change image every 4 seconds
-    let myIndex = 0;
-    carousel();
+    var myIndex = 0;
 
     function carousel() {
-        let i;
-        let x = document.getElementsByClassName("mySlides");
+        let i, x = document.getElementsByClassName("mySlides");
+        if (!x.length) {
+            setTimeout(carousel, 8000);
+            return false;
+        }
 
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
@@ -43,7 +48,7 @@
             myIndex = 1
         }
         x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
+        setTimeout(carousel, 8000);
     }
 
 </script>
