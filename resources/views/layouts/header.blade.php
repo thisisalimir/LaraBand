@@ -19,13 +19,19 @@
 
         <router-link :to="{name: 'tour'}">
             <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
-                TOUR
+                Tour
             </a>
         </router-link>
 
         <router-link :to="{name: 'contact'}">
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
-                CONTACT
+                Contact
+            </a>
+        </router-link>
+
+        <router-link :to="{name: 'question'}">
+            <a href="#question" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+                Ask Question
             </a>
         </router-link>
 

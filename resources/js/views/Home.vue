@@ -5,7 +5,6 @@
             <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
                 <h3>{{ slider.title }}</h3>
                 <p><b>{{ slider.description }}</b></p>
-                <!--<p v-text="slider.description"><b>{{ slider.description }}</b></p>-->
             </div>
         </div>
     </div>

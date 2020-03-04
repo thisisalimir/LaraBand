@@ -18,6 +18,10 @@ let routes = [
         path: '/contact',
         name: 'contact',
         component: require('./views/Contact').default
+    }, {
+        path: '/question',
+        name: 'question',
+        component: require('./views/Question').default
     }
 ];
 
