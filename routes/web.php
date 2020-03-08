@@ -19,6 +19,5 @@ Route::get('/sliders', function () {
     return \App\slider::all();
 });
 
-Route::get('/question', function () {
-    return \App\Question::with('user')->latest()->get();
-});
+Route::get('/question', 'QuestionController@index');
+Route::post('/question', 'QuestionController@store');

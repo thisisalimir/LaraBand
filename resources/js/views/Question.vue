@@ -4,18 +4,16 @@
             <br>
             <div class="w3-col m12">
                 <div class="w3-card w3-round w3-white">
-                    <div class="w3-container w3-padding">
-                        <h6 class="w3-opacity">Ask Any Question From Us:</h6>
-                        <p contenteditable="true" class="w3-border w3-padding">Write Something...</p>
-                        <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>Send</button>
-                    </div>
+                    <!--When Complete Question We Show Them-->
+                    <add-to-stream  @completed="addQuestion"></add-to-stream>
                 </div>
             </div>
         </div>
 
         <div class="w3-container w3-card w3-grey w3-round w3-margin" v-for="question in questions">
             <br>
-            <span class="w3-right w3-opacity">{{ postedOn(question) }}</span>
+            <!--Use Filter For Show Date And Capitalize-->
+            <span class="w3-right w3-opacity">{{ question.created_at | ago | capitalize }}</span>
             <h4>{{ question.user.name }}</h4><br>
             <hr class="w3-clear">
             <p v-text="question.question_body"></p>
@@ -27,19 +25,38 @@
 <script type="text/javascript">
     import Question from '../models/Question';
     import moment from 'moment';
+    import AddToStream from '../components/AddToStream';
 
     export default {
+        //Declare Component
+        components: {
+            AddToStream
+        },
         data() {
             return {
                 questions: []
             }
         },
+        //Using Filter For Show & Capitalize Date
+        filters: {
+            ago(date) {
+                return moment(date).fromNow();
+            },
+            capitalize(value) {
+                return value.toUpperCase();
+            }
+        },
+        //Get All Question Form Question Class
         created() {
             Question.all(questions => this.questions = questions);
         },
         methods:{
-            postedOn(question){
-                return moment(question.created_at).fromNow();
+            //Store Question
+            addQuestion(question){
+                this.questions.unshift(question);
+                alert('Your Question Submit We Will Answer Very Soon');
+
+                window.scrollTo(0, 0);
             }
         }
     }
