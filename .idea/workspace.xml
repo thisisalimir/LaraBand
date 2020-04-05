@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-    </list>
+    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1721,7 +1719,7 @@
       <workItem from="1583225624440" duration="34000" />
       <workItem from="1583333494572" duration="4088000" />
       <workItem from="1583656145285" duration="6636000" />
-      <workItem from="1586092481359" duration="4545000" />
+      <workItem from="1586092481359" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="Install">
       <created>1582004834856</created>
