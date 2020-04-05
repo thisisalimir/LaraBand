@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/AddToStream.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/utilities/Errors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/utilities/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/views/Question.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Question.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +15,7 @@
     <session id="-552001623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.26" value="1" />
@@ -48,7 +38,7 @@
           <entry key="md" value="55" />
           <entry key="php" value="879" />
           <entry key="scss" value="11" />
-          <entry key="txt" value="158" />
+          <entry key="txt" value="201" />
           <entry key="vue" value="2626" />
         </counts>
       </usages-collector>
@@ -59,7 +49,7 @@
           <entry key="JavaScript" value="538" />
           <entry key="Markdown" value="55" />
           <entry key="PHP" value="414" />
-          <entry key="PLAIN_TEXT" value="165" />
+          <entry key="PLAIN_TEXT" value="208" />
           <entry key="SCSS" value="11" />
           <entry key="Vue.js" value="2626" />
         </counts>
@@ -92,29 +82,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/views/Question.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-              <folding>
-                <element signature="e#1165#1207#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -811,7 +779,7 @@
         <observation name="typedSelect" value="3.0" />
       </dailyData>
       <dailyData date="08-03-2020">
-        <observation name="cancelled" value="564.0" />
+        <observation name="cancelled" value="600.0" />
         <observation name="explicitSelect" value="46.0" />
         <observation name="typedSelect" value="11.0" />
       </dailyData>
@@ -865,7 +833,7 @@
         <observation name="count" value="152.0" />
       </dailyData>
       <dailyData date="08-03-2020">
-        <observation name="count" value="621.0" />
+        <observation name="count" value="657.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -1872,7 +1840,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jazb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -1917,7 +1885,7 @@
       <workItem from="1583166518029" duration="2408000" />
       <workItem from="1583225624440" duration="34000" />
       <workItem from="1583333494572" duration="4088000" />
-      <workItem from="1583656145285" duration="6497000" />
+      <workItem from="1583656145285" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="Install">
       <created>1582004834856</created>
@@ -1961,15 +1929,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583338216300</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Form Component For User to Ask Question">
+      <created>1583663141436</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583663141436</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35739000" />
+    <option name="totallyTimeSpent" value="35878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16470589" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2034,7 +2008,8 @@
     <MESSAGE value="WIHome" />
     <MESSAGE value="Create Slider Class&#10;Add Slider and bind Data" />
     <MESSAGE value="Add Question&amp;Answer section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Question&amp;Answer section" />
+    <MESSAGE value="Add Form Component For User to Ask Question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Form Component For User to Ask Question" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -2177,13 +2152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/utilities/Errors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -2249,10 +2217,17 @@
     <entry file="file://$PROJECT_DIR$/resources/js/views/Question.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="e#1165#1207#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
