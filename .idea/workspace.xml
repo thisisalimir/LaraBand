@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="" />
+    <list default="true" id="79d37431-2a4a-4a41-9993-b6e2629f11a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1695,6 +1698,9 @@
       <recent name="C:\xampp\htdocs\LaraBand\resources\js\views" />
     </key>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1719,7 +1725,7 @@
       <workItem from="1583225624440" duration="34000" />
       <workItem from="1583333494572" duration="4088000" />
       <workItem from="1583656145285" duration="6636000" />
-      <workItem from="1586092481359" duration="4813000" />
+      <workItem from="1586092481359" duration="5262000" />
     </task>
     <task id="LOCAL-00001" summary="Install">
       <created>1582004834856</created>
@@ -1770,7 +1776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583663141436</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Form Component For User to Ask Question">
+      <created>1586107115104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586107115105</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1784,7 +1797,8 @@
     <MESSAGE value="Create Slider Class&#10;Add Slider and bind Data" />
     <MESSAGE value="Add Question&amp;Answer section" />
     <MESSAGE value="Add Form Component For User to Ask Question" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Form Component For User to Ask Question" />
+    <MESSAGE value="Finishing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586092946341">
@@ -1795,5 +1809,9 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="303" y="0" key="CommitChangelistDialog2/0.0.1360.768@0.0.1360.768" timestamp="1586107125867" />
+    <state x="272" y="112" key="Vcs.Push.Dialog.v2" timestamp="1586107250049">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="272" y="112" key="Vcs.Push.Dialog.v2/0.0.1360.768@0.0.1360.768" timestamp="1586107250049" />
   </component>
 </project>
