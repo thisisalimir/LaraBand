@@ -22,7 +22,7 @@ class QuestionsTableSeeder extends Seeder {
         \App\Question::create([
             'user_id' => 1,
             'question_body' => 'What is one message you would give to your fans?',
-            'answer_body' => null,
+            'answer_body' => 'Always Work On Your Dreams',
         ]);
     }
 }
