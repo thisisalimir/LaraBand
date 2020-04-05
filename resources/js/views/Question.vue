@@ -4,7 +4,7 @@
             <br>
             <div class="w3-col m12">
                 <div class="w3-card w3-round w3-white">
-                    <!--When Complete Question We Show Them-->
+                    <!--When Complete QuestionsTableSeeder We Show Them-->
                     <add-to-stream  @completed="addQuestion"></add-to-stream>
                 </div>
             </div>
@@ -46,15 +46,15 @@
                 return value.toUpperCase();
             }
         },
-        //Get All Question Form Question Class
+        //Get All QuestionsTableSeeder Form QuestionsTableSeeder Class
         created() {
             Question.all(questions => this.questions = questions);
         },
         methods:{
-            //Store Question
+            //Store QuestionsTableSeeder
             addQuestion(question){
                 this.questions.unshift(question);
-                alert('Your Question Submit We Will Answer Very Soon');
+                alert('Your QuestionsTableSeeder Submit We Will Answer Very Soon');
 
                 window.scrollTo(0, 0);
             }

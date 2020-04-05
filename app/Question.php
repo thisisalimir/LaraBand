@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Question
+ * Class QuestionsTableSeeder
  * @package App
  */
 class Question extends Model

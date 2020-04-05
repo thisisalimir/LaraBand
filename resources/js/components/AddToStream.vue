@@ -15,13 +15,13 @@
 
 <script>
     export default {
-        //Get New Question
+        //Get New QuestionsTableSeeder
         data() {
             return {
                 form: new Form({question_body: ''})
             };
         },
-        //Pass Question To Form Submit
+        //Pass QuestionsTableSeeder To Form Submit
         methods: {
             onSubmit() {
                 this.form
